@@ -1,0 +1,20 @@
+<aura:component controller="Defaulters" implements="flexipage:availableForAllPageTypes" access="global">
+    
+    <aura:attribute type="Employee__c[]" name="empList"/>
+    <aura:attribute name="mycolumns" type="List"/>
+      
+    <aura:handler name="init" value="{!this}" action="{!c.fetchAcc}"/>
+    <lightning:card  title="Current checked out List" iconName="custom:custom15"> 
+        <p class="slds-p-horizontal_small">
+           <b>Employee with currently checked out items.  </b> 
+        
+        </p>
+    <br></br>
+       
+    <lightning:datatable data="{! v.empList }"
+                         columns="{! v.mycolumns }"
+                         keyField="id"
+                         hideCheckboxColumn="true"/>
+ </lightning:card>
+</aura:component>
+

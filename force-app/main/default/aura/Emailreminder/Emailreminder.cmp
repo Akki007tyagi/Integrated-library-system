@@ -1,0 +1,11 @@
+<aura:component controller="SendEmailHandler" implements="flexipage:availableForAllPageTypes" access="global">
+     
+
+    <lightning:card  title="Send Reminder to Employees" iconName="custom:custom23"> 
+        <p class="slds-p-horizontal_small">
+           *Send a mail to remind employees to return items in order to avoid heavy fines.      
+        </p>
+        <center><lightning:button variant="success" label="Send Email" title="Send Email" onclick="{!c.Send}"/> 
+        </center>
+ </lightning:card>
+</aura:component>	

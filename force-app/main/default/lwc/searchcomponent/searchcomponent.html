@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Search Available Items"> 
+        <div class="slds-m-around_medium">
+<lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search">
+
+
+</lightning-input>
+
+   <template if:true={items}>
+       <template for:each={items} for:item="it"> 
+        <c-searchresults key={it.id} items={it}>
+                    
+        </c-searchresults>
+       </template>
+
+   </template>
+
+        </div>  
+
+    </lightning-card>
+</template>

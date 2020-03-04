@@ -1,0 +1,20 @@
+<aura:component controller="OverdueBorrowing" implements="flexipage:availableForAllPageTypes" access="global">
+    
+    <aura:attribute type="Borrowing__c[]" name="borList"/>
+    <aura:attribute name="mycolumns" type="List"/>
+      
+    <aura:handler name="init" value="{!this}" action="{!c.fetchBor}"/>
+    <lightning:card  title="Overdue Borrowing List" iconName="standard:account"> 
+        <p class="slds-p-horizontal_small">
+           <b>Overdue booking records.  </b> 
+        
+        </p>
+    <br></br>
+       
+    <lightning:datatable data="{! v.borList }"
+                         columns="{! v.mycolumns }"
+                         keyField="id"
+                         hideCheckboxColumn="true"/>
+ </lightning:card>
+</aura:component>
+

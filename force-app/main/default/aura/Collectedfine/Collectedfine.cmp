@@ -1,0 +1,12 @@
+<aura:component controller="Collectfine" implements="flexipage:availableForAllPageTypes" access="global">
+    
+    <aura:attribute type="Decimal" name="fine"/>
+      
+    <aura:handler name="init" value="{!this}" action="{!c.fetchFine}"/>
+    <lightning:card  title="Total Fine Collected !" iconName="standard:thanks"> 
+     <center>  <b><h1>The total amount of fine collected till date : {!v.fine} $</h1></b></center>
+    <br></br>
+    
+ </lightning:card>
+</aura:component>
+
