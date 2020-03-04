@@ -2,7 +2,21 @@
 
 This application helps in tracking all the resources in a library along with all the bookings and members or employees with borrowed items. The system also provides a way to send E-mail reminders to all the defaulters along with the collection of the fine. The system also keeps track of all the available resources or items and prevent users from borrowing items that are not available at the moment. Item will soon be available once it has been returned to the inventory. The system also deals with all the validations and allows streamline management of the library system. This salesforce lightning application is a collection of Aura components and lightning web components. 
 
+Home Page:
+
 ![Homepage](https://github.com/AakashTyagi11/Integrated-library-system/blob/master/Application%20home%20page.png)
+
+Items:
+
+![Items](https://github.com/AakashTyagi11/Integrated-library-system/blob/master/Items.png)
+
+Employees:
+
+![Employees](https://github.com/AakashTyagi11/Integrated-library-system/blob/master/Employees.png)
+
+Borrowings:
+
+![Borrowings](https://github.com/AakashTyagi11/Integrated-library-system/blob/master/Borrowings.png)
 
 In case you want to develop any salesforce lightning application using Visual Studio code, you can refer to the following information for environment setup. 
 
