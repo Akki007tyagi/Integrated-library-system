@@ -1,6 +1,7 @@
 # Integrated library system
 
 Developed a demo Salesforce lightning application for a library to manage and track all the resources in a library with features like add, update, search, fine collection, email reminders & push notifications. The Salesforce application is a collection of Aura components and lightning web components and was built using Apex and JavaScript. 
+
 Home Page:
 
 ![Homepage](https://github.com/AakashTyagi11/Integrated-library-system/blob/master/Application%20home%20page.png)
